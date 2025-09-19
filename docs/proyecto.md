@@ -1,3 +1,8 @@
+# Distribucion
+- Carpeta client para el frontend
+- Carpeta server para el backend
+- Carpeta docs para la documentación
+
 # 📊 Diagrama de Secuencia - Catálogo de Ropa
 
 ```mermaid
@@ -7,7 +12,7 @@ sequenceDiagram
     participant API as Backend
     participant DB as Base de Datos
     participant A as Administrador
-
+y
     Note over U: Usuario entra al sitio
     U->>FE: Abre la web
     FE->>API: GET /productos
