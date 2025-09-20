@@ -1,0 +1,334 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet\\Creaciones_Nikolet.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Datos\\Creaciones_Nikolet.Datos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Datos\\Creaciones_Nikolet.Datos.csproj",
+        "projectName": "Creaciones_Nikolet.Datos",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Datos\\Creaciones_Nikolet.Datos.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Datos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Modelos\\Creaciones_Nikolet.Modelos.csproj": {
+                "projectPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Modelos\\Creaciones_Nikolet.Modelos.csproj"
+              },
+              "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Utilidades\\Creaciones_Nikolet.Utilidades.csproj": {
+                "projectPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Utilidades\\Creaciones_Nikolet.Utilidades.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Modelos\\Creaciones_Nikolet.Modelos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Modelos\\Creaciones_Nikolet.Modelos.csproj",
+        "projectName": "Creaciones_Nikolet.Modelos",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Modelos\\Creaciones_Nikolet.Modelos.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Modelos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Utilidades\\Creaciones_Nikolet.Utilidades.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Utilidades\\Creaciones_Nikolet.Utilidades.csproj",
+        "projectName": "Creaciones_Nikolet.Utilidades",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Utilidades\\Creaciones_Nikolet.Utilidades.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Utilidades\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet\\Creaciones_Nikolet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet\\Creaciones_Nikolet.csproj",
+        "projectName": "Creaciones_Nikolet",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet\\Creaciones_Nikolet.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Datos\\Creaciones_Nikolet.Datos.csproj": {
+                "projectPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Gihub-Dev\\CREACIONES-NIKOLET\\Codigo\\Creaciones_Nikolet\\Creaciones_Nikolet.Datos\\Creaciones_Nikolet.Datos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Datos.deps.json
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Datos.runtimeconfig.json
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Datos.dll
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Datos.pdb
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Modelos.dll
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Utilidades.dll
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Modelos.pdb
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Utilidades.pdb
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.csproj.AssemblyReference.cache
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.AssemblyInfoInputs.cache
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.AssemblyInfo.cs
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.csproj.CoreCompileInputs.cache
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creacion.2F552F35.Up2Date
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.dll
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\refint\Creaciones_Nikolet.Datos.dll
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.pdb
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.genruntimeconfig.cache
+C:\Users\HP\Escritorio\C#\Aspe .net core MVC\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\ref\Creaciones_Nikolet.Datos.dll
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Datos.deps.json
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Datos.runtimeconfig.json
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Datos.dll
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Datos.pdb
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Modelos.dll
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Utilidades.dll
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Modelos.pdb
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\bin\Debug\net9.0\Creaciones_Nikolet.Utilidades.pdb
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.AssemblyInfoInputs.cache
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.AssemblyInfo.cs
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.sourcelink.json
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creacion.2F552F35.Up2Date
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.dll
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\refint\Creaciones_Nikolet.Datos.dll
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.pdb
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\Creaciones_Nikolet.Datos.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Escritorio\Gihub-Dev\CREACIONES-NIKOLET\Codigo\Creaciones_Nikolet\Creaciones_Nikolet.Datos\obj\Debug\net9.0\ref\Creaciones_Nikolet.Datos.dll
