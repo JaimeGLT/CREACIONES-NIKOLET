@@ -2,7 +2,7 @@ import React from 'react'
 
 interface SectionProps {
     title: string;
-    children: React.ReactElement
+    children: React.ReactNode
 }
 
 const SectionClothes = ({title, children}: SectionProps) => {
@@ -12,8 +12,8 @@ const SectionClothes = ({title, children}: SectionProps) => {
                 <h2 className='font-paloseco text-7xl text-white'>{title}</h2>
             </div>
                 
-<div
-                className="h-[300vh] w-full"
+            <div
+                className="w-full p-30 py-50 grid grid-cols-[repeat(auto-fill,minmax(257px,1fr))] gap-x-8 gap-y-25 place-items-center"
                 style={{
                     background: `linear-gradient(
                         180deg,

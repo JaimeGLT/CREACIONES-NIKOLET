@@ -45,10 +45,10 @@ const NavBar = () => {
                 </li>
             </ul>
             <ul className='flex justify-center items-center text-sm gap-15'>
-                <li><a className='font-hug-me' href="/">INICIO</a></li>
+                <li><a className='font-hug-me hover:text-secondary-pink' href="/">INICIO</a></li>
 
-                <li className='relative group flex flex-row gap-1 items-center justify-center font-hug-me'>TIENDA <ChevronDown className='size-4'/>
-                    <ul className='absolute left-0 top-full bg-secondary-light hidden group-hover:flex flex-col gap-3 py-1 rounded-lg z-10'>
+                <li className='relative group flex flex-row gap-1 items-center justify-center font-hug-me hover:text-secondary-pink'>TIENDA <ChevronDown className='size-4'/>
+                    <ul className='absolute left-0 top-full text-black bg-secondary-light hidden group-hover:flex flex-col gap-3 py-1 rounded-lg z-10'>
                         {
                             shopSubElements.map((item, index) => (
                                 <li key={index} className=''>
@@ -61,7 +61,7 @@ const NavBar = () => {
                     </ul>
                 </li>
 
-                <li><a className='font-hug-me' href="/cuenta">MI CUENTA</a></li>
+                <li><a className='font-hug-me hover:text-secondary-pink' href="/cuenta">MI CUENTA</a></li>
             </ul>
         </nav>
     </header>

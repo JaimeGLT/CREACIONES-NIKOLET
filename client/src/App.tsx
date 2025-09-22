@@ -4,7 +4,6 @@ import { Slogan } from './components/Slogan'
 import PrincipalPage from './pages/principalPage/PrincipalPage'
 import EscolarPage from './pages/Escolar/EscolarPage'
 
-
 function App() {
 
   return (
