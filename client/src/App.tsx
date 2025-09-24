@@ -3,6 +3,8 @@ import NavBar from './components/NavBar'
 import { Slogan } from './components/Slogan'
 import PrincipalPage from './pages/principalPage/PrincipalPage'
 import EscolarPage from './pages/Escolar/EscolarPage'
+import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -16,6 +18,9 @@ function App() {
         <Route path="/" element={<PrincipalPage />}/>
         <Route path="/colegial" element={<EscolarPage />}/>
       </Routes>
+
+      <Footer />
+      <Contact />
     </BrowserRouter>
   )
 }

@@ -7,7 +7,7 @@ interface SectionProps {
 
 const SectionClothes = ({title, children}: SectionProps) => {
     return (
-        <section className='w-full h-[80vh]'>
+        <section className='w-full h-full'>
             <div className='bg-primary w-full h-50 flex items-center justify-center'>
                 <h2 className='font-paloseco text-7xl text-white'>{title}</h2>
             </div>
