@@ -8,12 +8,12 @@ interface SectionProps {
 const SectionClothes = ({title, children}: SectionProps) => {
     return (
         <section className='w-full h-full'>
-            <div className='bg-primary w-full h-50 flex items-center justify-center'>
-                <h2 className='font-paloseco text-7xl text-white'>{title}</h2>
+            <div className='h-20 sm:h-30 bg-primary w-full md:h-40 flex items-center justify-center'>
+                <h2 className='font-paloseco text-2xl sm:text-4xl md:text-6xl text-white'>{title}</h2>
             </div>
                 
             <div
-                className="w-full p-30 py-50 grid grid-cols-[repeat(auto-fill,minmax(257px,1fr))] gap-x-8 gap-y-25 place-items-center"
+                className="w-full md:p-20 xl:p-30 px-4 py-20 md:py-30 xl:py-40 grid grid-cols-2 md:grid-cols-[repeat(auto-fill,minmax(257px,1fr))] gap-x-8 gap-y-10 md:gap-y-25 place-items-center"
                 style={{
                     background: `linear-gradient(
                         180deg,
