@@ -1,5 +1,4 @@
 import PromosCard from './components/PromosCard'
-import SectionComponent from '../../components/SectionClothes'
 import TitleSection from './components/TitleSection'
 
 const Promos = () => {
