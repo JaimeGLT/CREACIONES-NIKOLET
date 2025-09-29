@@ -1,25 +1,27 @@
-import Card from '../../components/Card'
 import SectionClothes from '../../components/SectionClothes'
+import Card from '../../components/Card'
 
-const arrayTorender = [1,2,3,4,5,6,7,8,9]
+const Blusas = () => {
 
-const EscolarPage = () => {
+    const arrayTorender = [1,2,3,4,5,6,7,8,9];
+
     return (
         <div>
-            <SectionClothes title='ESCOLAR'>
+            <SectionClothes title='BLUSAS'>
                 {
                     arrayTorender.map(item => (
                         
                         <Card 
                             key={item}
-                            url={`/images/escolar-1.jpg`}
+                            url={`/images/blusa.jpg`}
                         />
                     ))
                 }
 
             </SectionClothes>
+
         </div>
     )
 }
 
-export default EscolarPage
+export default Blusas

@@ -18,18 +18,18 @@ const NavBar = () => {
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : ''
-    return () => (document.body.style.overflow = '')
+    return () => {document.body.style.overflow = ''};
   }, [isOpen])
 
   return (
     <header className="shadow-md bg-white">
       <nav className="flex justify-between items-center px-4 md:px-10 py-3">
         <a href="/">
-          <img className="w-32 h-auto md:w-55 xl:w-65" src={logo} alt="logo de creaciones nikolet" />
+          <img className="w-32 h-auto md:w-55 xl:w-70" src={logo} alt="logo de creaciones nikolet" />
         </a>
 
         {/* Menú de pc */}
-        <ul className="hidden md:flex items-center gap-8 text-sm">
+        <ul className="hidden md:flex items-center xl:gap-15 gap-8 text-sm xl:mr-10">
           <li><a className="font-hug-me hover:text-secondary-pink xl:text-xl" href="/">INICIO</a></li>
           <li className="relative group flex items-center gap-1 font-hug-me hover:text-secondary-pink xl:text-xl">
             TIENDA <ChevronDown className="size-4" />
