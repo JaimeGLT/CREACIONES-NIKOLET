@@ -1,12 +1,12 @@
 import PromosCard from './components/PromosCard'
-import TitleSection from './components/TitleSection'
+import TitleSectionPromos from './components/TitleSectionPromos'
 
 const Promos = () => {
     return (
         <>
-            <TitleSection title='PROMOS Y DESCUENTOS'>
+            <TitleSectionPromos title='PROMOS Y DESCUENTOS'>
                 <PromosCard />
-            </TitleSection>
+            </TitleSectionPromos>
         </>
     )
 }

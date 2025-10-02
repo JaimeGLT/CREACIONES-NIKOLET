@@ -1,4 +1,5 @@
 import About from "./About"
+import Categorias from "./Categorias"
 import FrontPage from "./FrontPage"
 import Promos from "./Promos"
 
@@ -8,6 +9,7 @@ const PrincipalPage = () => {
         <FrontPage />
         <About />
         <Promos />
+        <Categorias />
     </div>
   )
 }
