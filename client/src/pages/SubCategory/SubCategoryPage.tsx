@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import SectionClothes from '../../components/SectionClothes'
 import Card from '../../components/Card'
 import { useParams } from 'react-router-dom'
