@@ -1,5 +1,5 @@
 import { zodResolver } from '@hookform/resolvers/zod';
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { createProduct } from '../schema/productSchema';
 import Input from './Input';
@@ -162,7 +162,7 @@ const UpdateProductModal = ({ setState, id, onUpdate }: UpdateProductModalProps)
                         type="submit"
                         className="p-2 px-4 bg-rose-500 rounded-xl cursor-pointer font-paloseco-light text-white hover:bg-rose-600 transition-colors"
                     >
-                        Añadir Producto
+                        {patchLoading ? "Guardando cambios...": "Guardar Cambios"}
                     </button>
                 </div>
 

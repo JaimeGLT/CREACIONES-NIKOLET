@@ -1,4 +1,3 @@
-import React from 'react'
 import TitleSectionOfertas from './components/TitleSectionOfertas'
 import OfertasCard from './components/OfertasCard'
 

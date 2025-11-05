@@ -22,13 +22,6 @@ function App() {
 
 
         <Route path="/" element={<PrincipalPage />}/>
-        {/* <Route path="/colegial" element={<EscolarPage />}/>
-        <Route path='/fiesta' element={<Fiesta />}/>
-        <Route path='/casual' element={<Casual />}/>
-        <Route path='/vestidos' element={<Vestidos />}/>
-        <Route path='/blusas' element={<Blusas />}/>
-        <Route path='/pantalones' element={<Pantalones />}/>
-        <Route path='/conjuntos' element={<Conjuntos />}/> */}
         <Route path='/login' element={<Login />}/>
       </Routes>
 
