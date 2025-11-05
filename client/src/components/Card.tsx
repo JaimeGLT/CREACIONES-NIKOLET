@@ -1,12 +1,25 @@
+import { Ellipsis } from "lucide-react";
 
 interface CardProps {
     url?: string;
+    id: number;
+    nombre?: string;
+    description?: string;
+    precio?: number;
+    state?: boolean;
+    setState?: (state: boolean) => void;
+    setCurrentProductId: (id: number) => void;
 }
 
-const Card = ({url}: CardProps) => {
+const Card = ({url, nombre, description, precio, setState, id ,setCurrentProductId}: CardProps) => {
     return (
         <div className="bg-white flex flex-col p-2 sm:p-4 rounded-4xl w-full max-w-[257px] gap-2 sm:gap-4">
             <div className='relative'>
+                <div className="absolute bg-gray-200 top-2 left-3 rounded-full p-2 sm:top-5 sm:left-4 z-10 flex items-center justify-center cursor-pointer"
+                    onClick={(() => {setState && setState(true); setCurrentProductId(id)})}
+                >
+                    <Ellipsis className="size-5"/>
+                </div>
                 <img className='aspect-[3/4] rounded-t-4xl h-full w-full object-cover' src={url} alt="" />
                 <svg className='absolute size-7  top-2 right-3 sm:top-5 sm:right-4 z-10 fill-white hover:fill-red-500 cursor-pointer'
                      viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg">
@@ -14,9 +27,9 @@ const Card = ({url}: CardProps) => {
                 </svg>
             </div>
             <div className='bg-secondary-light flex flex-col gap-2 font-paloseco-light p-4 rounded-b-4xl'>
-                <h3 className='text-xs md:text-base'>MODA</h3>
-                <p className='text-xs md:text-base'>Descripción</p>
-                <p className='text-xs md:text-base'>Precio</p>
+                <h3 className='text-xs md:text-base font-semibold'>{nombre}</h3>
+                <p className='text-xs md:text-base'>{description && description?.length > 30 ? description?.slice(0,10) + "..." : description}</p>
+                <p className='text-xs md:text-base'>Bs {precio}</p>
             </div>
         </div>
     )

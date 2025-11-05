@@ -26,10 +26,27 @@
   --font-paloseco: "Paloseco-Medium";
   --font-paloseco-light: "Paloseco-Light";
 
+  --color-paragraph: #7A7272;
+
   --color-primary: #F6B2BE;
   --color-secondary-light: #FFDDE3;
   --color-secondary-pink: #FF7ADB;
   --color-secondary-purple: #730054;
   --color-buttons-color: #F393A4
 
+}
+
+@keyframes modalIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-modalIn {
+  animation: modalIn 0.3s ease-out forwards;
 }

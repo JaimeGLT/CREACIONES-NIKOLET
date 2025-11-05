@@ -23,15 +23,15 @@ const NavBar = () => {
 
   return (
     <header className="shadow-md bg-white">
-      <nav className="flex justify-between items-center px-4 md:px-10 py-3">
+      <nav className="flex justify-between items-center px-4 md:px-10">
         <a href="/">
-          <img className="w-32 h-auto md:w-55 xl:w-70" src={logo} alt="logo de creaciones nikolet" />
+          <img className="w-32 h-auto md:w-50 xl:w-50" src={logo} alt="logo de creaciones nikolet" />
         </a>
 
         {/* Menú de pc */}
         <ul className="hidden md:flex items-center xl:gap-15 gap-8 text-sm xl:mr-10">
-          <li><a className="font-hug-me hover:text-secondary-pink xl:text-xl" href="/">INICIO</a></li>
-          <li className="relative group flex items-center gap-1 font-hug-me hover:text-secondary-pink xl:text-xl">
+          <li><a className="font-hug-me hover:text-secondary-pink xl:text-base" href="/">INICIO</a></li>
+          <li className="relative group flex items-center gap-1 font-hug-me hover:text-secondary-pink xl:text-base">
             TIENDA <ChevronDown className="size-4" />
             <ul className="absolute left-0 top-full text-black bg-secondary-light hidden group-hover:flex flex-col gap-3 py-1 rounded-lg z-10">
               {shopSubElements.map((item, i) => (
@@ -46,7 +46,7 @@ const NavBar = () => {
               ))}
             </ul>
           </li>
-          <li><a className="font-hug-me hover:text-secondary-pink xl:text-xl" href="/cuenta">MI CUENTA</a></li>
+          <li><a className="font-hug-me hover:text-secondary-pink xl:text-base" href="/cuenta">MI CUENTA</a></li>
         </ul>
 
 
