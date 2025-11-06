@@ -1,13 +1,13 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form'
-import Input from './Input';
+import Input from '.././Input';
 import toast from 'react-hot-toast';
-import { updateSubcategoria } from '../schema/subcategoriaSchema';
-import usePatch from '../hooks/patchHook';
-import { getHook } from '../hooks/getHook';
+import { updateSubcategoria } from '../../schema/subcategoriaSchema';
+import usePatch from '../../hooks/patchHook';
+import { getHook } from '../../hooks/getHook';
 import { useEffect } from 'react';
-import Select from './Select';
-import Loading from './Loading';
+import Select from '.././Select';
+import Loading from '.././Loading';
 
 interface CreateProductModalProps {
     setState: (state: boolean) => void;

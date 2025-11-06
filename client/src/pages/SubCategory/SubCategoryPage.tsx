@@ -4,11 +4,12 @@ import Card from '../../components/Card'
 import { useParams } from 'react-router-dom'
 import { getHook } from '../../hooks/getHook';
 import Modal from '../../components/Modal';
-import CreateProductModal from '../../components/CreateProductModal';
-import UpdateSubcategoriaModal from '../../components/UpdateSubcategoriaModal';
+import CreateProductModal from '../../components/modal/CreateProductModal';
+import UpdateSubcategoriaModal from '../../components/modal/UpdateSubcategoriaModal';
 import type { ProductType } from '../../types/ProductType';
 import Loading from '../../components/Loading';
-import UpdateProductModal from '../../components/UpdateProductModal';
+import UpdateProductModal from '../../components/modal/UpdateProductModal';
+import DeleteProductModal from '../../components/modal/DeleteProductModal';
 
 interface subCategoryInfo {
     title: string;
@@ -21,6 +22,7 @@ const SubCategoryPage = () => {
     const [ createState, setCreateState ] = useState<boolean>(false);
     const [ editTitleState, setEditTitleState ] = useState<boolean>(false);
     const [ editProductState, setEditProductState ] = useState<boolean>(false);
+    const [ deleteProductState, setDeleteProductState ] = useState<boolean>(false);
     const [ currentProductId, setCurrentProductid ] = useState<number | null>(null);
 
     const subCategoryInfo: Record<string, subCategoryInfo> = {
@@ -57,14 +59,16 @@ const SubCategoryPage = () => {
                             setState={setEditProductState}
                             precio={item.costoVenta}
                             nombre={item.nombre}
-                            url={"/images/pantalon.jpg"}
+                            url={item.urlImagen}
                             setCurrentProductId={setCurrentProductid}
+                            setDeleteProductState={setDeleteProductState}
                         />
                     ))
                 }
 
             </SectionClothes>
 
+            {/* create product modal */}
             <Modal
                 state={createState}
                 setState={setCreateState}
@@ -78,6 +82,7 @@ const SubCategoryPage = () => {
                 />
             </Modal>
 
+            {/* Edit subcategoria */}
             <Modal
                 state={editTitleState}
                 setState={setEditTitleState}
@@ -91,6 +96,7 @@ const SubCategoryPage = () => {
                 />
             </Modal>
 
+            {/* Edit product modal */}
             <Modal
                 state={editProductState}
                 setState={setEditProductState}
@@ -100,6 +106,20 @@ const SubCategoryPage = () => {
                 <UpdateProductModal
                     id={currentProductId} 
                     setState={setEditProductState}
+                    onUpdate={refetchProducts}
+                />
+            </Modal>
+
+            {/* Delete product modal */}
+            <Modal
+                state={deleteProductState}
+                setState={setDeleteProductState}
+                title='Confirmar Eliminación'
+                description='El producto será eliminado permanentemente de tu catálogo'
+            >
+                <DeleteProductModal
+                    id={currentProductId}
+                    setState={setDeleteProductState}
                     onUpdate={refetchProducts}
                 />
             </Modal>
