@@ -31,37 +31,37 @@ const EditarProductModal = ({ setState }: EditarProductModalProps) => {
                     error={errors?.codigo?.message}
                 />
                 <Input 
-                    inputName='nombre'
+                    inputName='Nombre'
                     labelContent='Nombre'
                     placeholder='Ej: Jean san juan'
-                    {...register("nombre")}
-                    error={errors?.nombre?.message}
+                    {...register("Nombre")}
+                    error={errors?.Nombre?.message}
                 />
                 <Input 
-                    inputName='descripcion'
+                    inputName='Descripcion'
                     labelContent='Descripctión'
                     placeholder='Ej: Pantalones licra con refuerzo de neopreno'
-                    {...register("descripcion")}
-                    error={errors?.descripcion?.message}
+                    {...register("Descripcion")}
+                    error={errors?.Descripcion?.message}
                 />
                 <div className='flex gap-2 w-full'>
                     <Input 
-                        inputName='costoCompra'
+                        inputName='CostoCompra'
                         labelContent='Precio de compra (Bs)'
                         placeholder='Ej: 10'
                         type='number'
                         step={0.01}
-                        {...register("costoCompra")}
-                        error={errors?.costoCompra?.message}
+                        {...register("CostoCompra")}
+                        error={errors?.CostoCompra?.message}
                     />
                     <Input 
-                        inputName='costoVenta'
+                        inputName='CostoVenta'
                         labelContent='Precio de venta (Bs)'
                         placeholder='Ej: 45'
                         type='number'
                         step={0.01}
-                        {...register("costoVenta")}
-                        error={errors?.costoVenta?.message}
+                        {...register("CostoVenta")}
+                        error={errors?.CostoVenta?.message}
                     />
                 </div>
                 <Input 
