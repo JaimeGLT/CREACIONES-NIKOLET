@@ -30,7 +30,7 @@ const Modal = ({state, setState, children, title, description }: ModalProps) => 
     if(!state) return null;
 
     return (
-        <div className='bg-[#00000050] fixed inset-0 w-full h-full flex items-center justify-center p-10 z-50'>
+        <div className='bg-[#00000050] fixed inset-0 w-full h-full flex items-center justify-center p-3 sm:p-5 md:p-10 z-50'>
             <div className="relative max-w-[500px] w-full max-h-[80vh] rounded-2xl overflow-auto p-6 
                             bg-gradient-to-br from-pink-100 via-pink-50 to-purple-100 
                             shadow-2xl border-2 border-white/50">

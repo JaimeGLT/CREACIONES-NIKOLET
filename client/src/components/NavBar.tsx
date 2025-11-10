@@ -46,7 +46,7 @@ const NavBar = () => {
               ))}
             </ul>
           </li>
-          <li><a className="font-hug-me hover:text-secondary-pink xl:text-base" href="/cuenta">MI CUENTA</a></li>
+          <li><a className="font-hug-me hover:text-secondary-pink xl:text-base" href="/mi-cuenta">MI CUENTA</a></li>
         </ul>
 
 
@@ -105,7 +105,7 @@ const NavBar = () => {
             </ul>
           </li>
             <hr />
-          <li><a className="font-hug-me hover:text-secondary-pink" href="/cuenta">MI CUENTA</a></li>
+          <li><a className="font-hug-me hover:text-secondary-pink" href="/mi-cuenta">MI CUENTA</a></li>
           <hr />
         </ul>
       </div>

@@ -10,13 +10,18 @@ import type { ProductType } from '../../types/ProductType';
 import Loading from '../../components/Loading';
 import UpdateProductModal from '../../components/modal/UpdateProductModal';
 import DeleteProductModal from '../../components/modal/DeleteProductModal';
+import type { UserType } from '../../types/UserType';
 
 interface subCategoryInfo {
     title: string;
     id: number;
 }
 
-const SubCategoryPage = () => {
+interface SubCategoryPageProps {
+    user: UserType | null;
+}
+
+const SubCategoryPage = ({ user }: SubCategoryPageProps) => {
 
     const { category } = useParams<{category: string}>();
     const [ createState, setCreateState ] = useState<boolean>(false);
@@ -48,9 +53,20 @@ const SubCategoryPage = () => {
                 title={loading ? <Loading /> : subCategoria?.nombre}
                 setEditTitleState={setEditTitleState}
                 setState={setCreateState}
+                showProductos={data?.length == 0 ? false : true}
+                roleUser={user?.role}
             >
                 {
-                    loading ? <Loading /> : data?.map((item: ProductType) => (
+                    loading ? <Loading /> 
+                    : data?.length == 0 ? 
+                        <div className="w-full flex items-center justify-center py-10">
+                            <img
+                                src="/img-no-products-transparent.png"
+                                alt="No hay ropa disponible"
+                                className="max-w-[300px] w-full h-auto object-contain rounded-xl drop-shadow-md"
+                            />
+                        </div>
+                    : data?.map((item: ProductType) => (
                         
                         <Card 
                             key={item.id}
@@ -62,6 +78,7 @@ const SubCategoryPage = () => {
                             url={item.urlImagen}
                             setCurrentProductId={setCurrentProductid}
                             setDeleteProductState={setDeleteProductState}
+                            roleUser={user?.role}
                         />
                     ))
                 }

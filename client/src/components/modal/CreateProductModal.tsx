@@ -82,7 +82,7 @@ const CreateProductModal = ({ setState, id, onUpdate }: CreateProductModalProps)
                         <label className="font-paloseco text-base mb-2">Imagen del producto</label>
 
                         <div
-                        className={`relative w-full h-40 border-2 border-dashed rounded-2xl flex flex-col items-center justify-center cursor-pointer transition-all duration-200 ${
+                        className={`relative w-full h-40 border-2 border-dashed rounded-2xl flex flex-col items-center justify-center cursor-pointer transition-all duration-200 mb-2 ${
                             preview ? "border-purple-400" : "border-gray-300 hover:border-purple-300"
                         }`}
                         >
@@ -144,7 +144,7 @@ const CreateProductModal = ({ setState, id, onUpdate }: CreateProductModalProps)
                     {...register("Descripcion")}
                     error={errors?.Descripcion?.message}
                 />
-                <div className='flex gap-2 w-full'>
+                <div className='flex flex-col sm:flex-row gap-2 w-full'>
                     <Input 
                         inputName='CostoCompra'
                         color="purple"

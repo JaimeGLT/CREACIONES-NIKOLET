@@ -41,11 +41,11 @@ const Login = () => {
 
     return (
         <div className='bg-gradient-to-b from-buttons-color to-[#8D555F]'>
-            <div className='max-w-[1200px] w-[70%] mx-auto flex gap-5 h-screen'>
-                <div className='w-[55%] h-[80%] my-auto'>
+            <div className='max-w-[1200px] w-[90%] sm:w-[60%] lg:w-[70%] mx-auto flex gap-5 h-auto lg:h-screen py-10'>
+                <div className='w-[55%] h-[80%] my-auto hidden lg:block'>
                     <img className='bg-center bg-cover bg-no-repeat w-full h-full rounded-4xl' src="/images/login-img.jpg" alt="" />
                 </div>
-                <div className='bg-secondary-light w-[45%] h-[80%]  my-auto rounded-4xl'>
+                <div className='bg-secondary-light w-full lg:w-[45%] h-[80%] my-auto rounded-4xl'>
                     <div className='w-[80%] mx-auto relative'>
                         <div className='flex flex-col mb-10 w-full'>
                             <img src="/logo.svg " className='w-40 sticky right-0 top-5' alt="" />

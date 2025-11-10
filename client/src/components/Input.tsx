@@ -15,7 +15,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       <div className="flex flex-col w-full mb-4">
         <label
           htmlFor={inputName}
-          className="font-paloseco text-base mb-2 "
+          className="font-paloseco text-sm sm:text-base mb-2 "
         >
           {labelContent}
         </label>

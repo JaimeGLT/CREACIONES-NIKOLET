@@ -171,7 +171,7 @@ const UpdateProductModal = ({ setState, id, onUpdate }: UpdateProductModalProps)
                     {...register("Descripcion")}
                     error={errors?.Descripcion?.message}
                 />
-                <div className='flex gap-2 w-full'>
+                <div className='flex flex-col sm:flex-row gap-2 w-full'>
                     <Input 
                         inputName='CostoCompra'
                         color="purple"
@@ -212,10 +212,10 @@ const UpdateProductModal = ({ setState, id, onUpdate }: UpdateProductModalProps)
 
                 />
 
-                <div className="flex justify-end items-center gap-3 mt-3">
+                <div className="flex flex-col sm:flex-row justify-end sm:items-center gap-3 mt-3">
                     <button
                         type="button"
-                        className="p-2 px-4 rounded-xl cursor-pointer font-paloseco-light text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors"
+                        className="p-2 w-full px-4 rounded-xl cursor-pointer font-paloseco-light text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors border border-gray-300 sm:border-none"
                         onClick={() => setState(false)}
                     >
                         Cerrar
