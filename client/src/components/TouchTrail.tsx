@@ -1,56 +1,65 @@
 import { useEffect, useRef } from 'react';
 
-interface Particle {
+interface Bubble {
   x: number;
   y: number;
   size: number;
   opacity: number;
   color: string;
+  speedY: number;
+  speedX: number;
 }
 
-const TouchTrail = () => {
-  const particles = useRef<Particle[]>([]);
+const BubbleTrail = () => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const bubbles = useRef<Bubble[]>([]);
   const requestRef = useRef<number | null>(null);
   const pointer = useRef({ x: 0, y: 0 });
 
-  const colors = ['#F9A8D4', '#F472B6', '#EC4899'];
+  const colors = ['#F9A8D4', '#F472B6', '#EC4899', '#FBCFE8'];
 
-  // Crear partículas nuevas (muy pequeñas y visibles)
-  const addParticle = (x: number, y: number) => {
-    particles.current.push({
-      x,
-      y,
-      size: Math.random() * 0.4 + 0.2, // tamaño: 0.2px a 0.6px
-      opacity: Math.random() * 0.3 + 0.5, // opacidad: 0.5 a 0.8
-      color: colors[Math.floor(Math.random() * colors.length)],
-    });
+  const addBubble = (x: number, y: number) => {
+    // Creamos varias burbujas por movimiento para un efecto más vistoso
+    for (let i = 0; i < 2; i++) {
+      const size = Math.random() * 3 + 6; // tamaño grande: 20px a 50px
+      bubbles.current.push({
+        x: x + Math.random() * 10 - 5, // ligera dispersión
+        y: y + Math.random() * 10 - 5,
+        size,
+        opacity: Math.random() * 0.3 + 0.4, // opacidad sutil: 0.4 a 0.7
+        color: colors[Math.floor(Math.random() * colors.length)],
+        speedY: -(Math.random() * 0.7 + 0.3), // suben lentamente
+        speedX: (Math.random() - 0.5) * 0.5, // movimiento lateral leve
+      });
+    }
   };
 
-  // Animar estela
   const animate = () => {
-    const ctx = canvasRef.current?.getContext('2d');
     const canvas = canvasRef.current;
-    if (!ctx || !canvas) return;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    particles.current.forEach((p, i) => {
-      ctx.fillStyle = `rgba(${hexToRgb(p.color)}, ${p.opacity})`;
+    bubbles.current.forEach((b, i) => {
+      ctx.fillStyle = `rgba(${hexToRgb(b.color)}, ${b.opacity})`;
       ctx.beginPath();
-      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.arc(b.x, b.y, b.size, 0, Math.PI * 2);
       ctx.fill();
 
-      // Reducir opacidad y tamaño para desaparecer muy rápido
-      p.opacity -= 0.18; // desaparecen instantáneamente
-      p.size *= 0.95;
+      // Movimiento y desvanecimiento
+      b.y += b.speedY;
+      b.x += b.speedX;
+      b.opacity -= 0.01; // desvanecimiento lento
 
-      if (p.opacity <= 0) particles.current.splice(i, 1);
+      if (b.opacity <= 0 || b.y + b.size < 0) {
+        bubbles.current.splice(i, 1);
+      }
     });
 
     requestRef.current = requestAnimationFrame(animate);
   };
-
-  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -63,13 +72,13 @@ const TouchTrail = () => {
       const touch = e.touches[0];
       pointer.current.x = touch.clientX;
       pointer.current.y = touch.clientY;
-      addParticle(pointer.current.x, pointer.current.y);
+      addBubble(pointer.current.x, pointer.current.y);
     };
 
     const handleMouseMove = (e: MouseEvent) => {
       pointer.current.x = e.clientX;
       pointer.current.y = e.clientY;
-      addParticle(pointer.current.x, pointer.current.y);
+      addBubble(pointer.current.x, pointer.current.y);
     };
 
     document.addEventListener('touchmove', handleTouchMove);
@@ -101,4 +110,4 @@ function hexToRgb(hex: string) {
   return `${r},${g},${b}`;
 }
 
-export default TouchTrail;
+export default BubbleTrail;
