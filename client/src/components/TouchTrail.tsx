@@ -15,13 +15,13 @@ const TouchTrail = () => {
 
   const colors = ['#F9A8D4', '#F472B6', '#EC4899'];
 
-  // Crear partículas nuevas
+  // Crear partículas nuevas (muy pequeñas y visibles)
   const addParticle = (x: number, y: number) => {
     particles.current.push({
       x,
       y,
-      size: Math.random() * 3 + 2,
-      opacity: 0.6,
+      size: Math.random() * 0.4 + 0.2, // tamaño: 0.2px a 0.6px
+      opacity: Math.random() * 0.3 + 0.5, // opacidad: 0.5 a 0.8
       color: colors[Math.floor(Math.random() * colors.length)],
     });
   };
@@ -40,11 +40,10 @@ const TouchTrail = () => {
       ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
       ctx.fill();
 
-      // Reducir opacidad y tamaño para efecto fade
-      p.opacity -= 0.02;
-      p.size *= 0.96;
+      // Reducir opacidad y tamaño para desaparecer muy rápido
+      p.opacity -= 0.18; // desaparecen instantáneamente
+      p.size *= 0.95;
 
-      // Eliminar partículas invisibles
       if (p.opacity <= 0) particles.current.splice(i, 1);
     });
 
@@ -60,7 +59,6 @@ const TouchTrail = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    // Eventos para touch y mouse
     const handleTouchMove = (e: TouchEvent) => {
       const touch = e.touches[0];
       pointer.current.x = touch.clientX;
@@ -77,12 +75,12 @@ const TouchTrail = () => {
     document.addEventListener('touchmove', handleTouchMove);
     document.addEventListener('mousemove', handleMouseMove);
 
-    animate(); // iniciar animación
+    animate();
 
     return () => {
       document.removeEventListener('touchmove', handleTouchMove);
       document.removeEventListener('mousemove', handleMouseMove);
-      cancelAnimationFrame(requestRef.current!);
+      if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };
   }, []);
 
@@ -94,7 +92,7 @@ const TouchTrail = () => {
   );
 };
 
-// Función para convertir hex a RGB
+// Convertir hex a RGB
 function hexToRgb(hex: string) {
   const bigint = parseInt(hex.slice(1), 16);
   const r = (bigint >> 16) & 255;
