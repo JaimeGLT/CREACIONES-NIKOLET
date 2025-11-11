@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { getHook } from "../../hooks/getHook"
 import Loading from "../../components/Loading";
 import Card from "../../components/Card";
@@ -13,9 +12,6 @@ interface FavoritePageProps {
 const FavoritePage = ({ roleUser }: FavoritePageProps) => {
 
     const { data, loading, refetch } = getHook("/Favorito/ObtenerFavoritos");
-    console.log(data);
-    
-    const [ currentProductId, setCurrentProductid ] = useState<number | null>(null);
        
     const showProductos = data?.length == 0 ? false : true;
 
@@ -67,7 +63,7 @@ const FavoritePage = ({ roleUser }: FavoritePageProps) => {
                             precio={item.costoVenta}
                             nombre={item.nombre}
                             url={item.urlImagen}
-                            setCurrentProductId={setCurrentProductid}
+                            setCurrentProductId={() => {}}
                             roleUser={roleUser}
                             deleteFromFavorites={deleteFromFavorites}
                         />
