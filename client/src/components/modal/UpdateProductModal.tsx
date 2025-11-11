@@ -1,7 +1,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { createProduct, updateProduct } from '../../schema/productSchema';
+import { updateProduct } from '../../schema/productSchema';
 import Input from '.././Input';
 import { getHook } from '../../hooks/getHook';
 import Loading from '.././Loading';
