@@ -18,14 +18,14 @@ const SectionClothes = ({title, children, setState, setEditTitleState, showProdu
         <section className='w-full h-full'>
             <div className='h-20 sm:h-30 bg-primary w-full md:h-30 flex gap-2 items-center justify-center'>
                 {
-                        roleUser === "Admin" ? 
+                        roleUser === "Admin" && 
                             <div className='flex items-center justify-center hover:bg-white text-white hover:text-black p-2 rounded-full cursor-pointer'
                                 title='Editar'
                                 onClick={() => setEditTitleState(true)}
                             >
                                 <PencilRuler className='text-center size-6 sm:size-10 md:size-13' />
                             </div>
-                            : ""
+                            
                 }
                 <h2 className='font-paloseco text-2xl sm:text-4xl md:text-6xl text-white text-center'>{title}</h2>
             </div>

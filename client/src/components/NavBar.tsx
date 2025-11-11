@@ -1,10 +1,17 @@
 import { useEffect, useState } from 'react'
 import { ChevronDown, Menu, X } from 'lucide-react'
 import logo from '../../public/logo.svg'
+import type { UserType } from '../types/UserType'
 
-const NavBar = () => {
+interface NavBarProps {
+  user: UserType | null;
+  loading: boolean;
+}
+
+const NavBar = ({ user }: NavBarProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const [shopOpen, setShopOpen] = useState(false)
+  const [accountOpen, setAccountOpen] = useState(false)
 
   const shopSubElements = [
     { name: 'VESTIDOS', redirection: '/vestidos' },
@@ -14,6 +21,12 @@ const NavBar = () => {
     { name: 'CASUAL', redirection: '/casual' },
     { name: 'FIESTA', redirection: '/fiesta' },
     { name: 'ESCOLAR', redirection: '/colegial' },
+  ]
+
+  const miCuenta = [
+    { name: "Ver Perfil", redirection: "/mi-cuenta" },
+    { name: "Mis Favoritos", redirection: "/favoritos" },
+    { name: "Cerrar Sesión", redirecdtion: "/login" }
   ]
 
   useEffect(() => {
@@ -46,7 +59,26 @@ const NavBar = () => {
               ))}
             </ul>
           </li>
-          <li><a className="font-hug-me hover:text-secondary-pink xl:text-base" href="/mi-cuenta">MI CUENTA</a></li>
+          {
+            user ? (
+              <li className="relative group flex items-center gap-1 font-hug-me hover:text-secondary-pink xl:text-base">MI CUENTA<ChevronDown className="size-4" />
+                <ul className="absolute left-0 top-full text-black bg-secondary-light hidden group-hover:flex flex-col gap-3 py-1 rounded-lg z-10">
+                  {miCuenta.map((item, i) => (
+                    <li key={i}>
+                      <a
+                        className="bg-secondary-light rounded-sm block font-sans text-[0.75rem] py-1 w-full px-2 hover:text-white hover:bg-primary xl:text-base"
+                        href={item.redirection}
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li><a className="font-hug-me hover:text-secondary-pink xl:text-base" href="/mi-cuenta">Iniciar Sesión</a></li>
+            )
+          }
         </ul>
 
 
@@ -105,7 +137,36 @@ const NavBar = () => {
             </ul>
           </li>
             <hr />
-          <li><a className="font-hug-me hover:text-secondary-pink" href="/mi-cuenta">MI CUENTA</a></li>
+          {
+            user ? (
+              <li>            
+                <button
+                  onClick={() => setAccountOpen(!accountOpen)}
+                  className="w-full flex justify-between items-center font-hug-me hover:text-secondary-pink"
+                  >MI CUENTA <ChevronDown
+                    className={`size-4 transition-transform duration-200 ${accountOpen ? 'rotate-180' : ''}`}
+                  />
+                </button>
+                <ul
+                  className={`transition-all duration-300 overflow-hidden
+                              ${accountOpen ? 'max-h-96 mt-2' : 'max-h-0'}`}
+                >
+                  {miCuenta.map((item, i) => (
+                    <li key={i}>
+                      <a
+                        className="block font-sans text-sm py-1 pl-4 hover:text-secondary-pink"
+                        href={item.redirection}
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li><a className="font-hug-me hover:text-secondary-pink" href="/mi-cuenta">Iniciar Sesión</a></li>
+            )
+          }
           <hr />
         </ul>
       </div>

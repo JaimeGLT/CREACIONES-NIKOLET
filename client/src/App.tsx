@@ -12,29 +12,34 @@ import { useEffect, useState } from 'react'
 import type { UserType } from './types/UserType'
 import BubbleTrail from './components/BubbleTrail'
 import RegisterPage from './pages/register/RegisterPage'
+import FavoritePage from './pages/favorites/FavoritePage'
+import ProfilePage from './pages/profile/ProfilePage'
 
 function App() {
 
   const [ user, setUser ] = useState<UserType | null >(null);
-  const { data } = getHook("/Usuario/GetUsuario");
+  const { data, loading } = getHook("/Usuario/GetUsuario");
   useEffect(() => {
     setUser(data?.resultado);
+    console.log(user);
+    
   }, [data]);
   
   
   return (
     <>
       <Slogan />
-      <NavBar />
+      <NavBar user={user} loading={loading}/>
       <BubbleTrail />
         <Routes>
           {/* Renderiza todas las paginas de subcategorias */}
           <Route path="/:category" element={<SubCategoryPage user={user}/>}/> 
 
-
           <Route path="/" element={<PrincipalPage userRole={user?.role}/>}/>
-          <Route path='/mi-cuenta' element={<Login />}/>
+          <Route path='/iniciar-sesion' element={<Login />}/>
           <Route path='/registro' element={<RegisterPage />}/>
+          <Route path='/favoritos' element={<FavoritePage roleUser={user?.role}/>}/>
+          <Route path='/mi-cuenta' element={<ProfilePage />}/>
         </Routes>
 
         <Footer />

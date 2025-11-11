@@ -46,7 +46,7 @@ const SubCategoryPage = ({ user }: SubCategoryPageProps) => {
 
     const { data, loading, refetch: refetchProducts } = getHook("/Productos/GetProductosPorSubcategoria/"+currentCategory.id);
     const { data: subCategoria, refetch } = getHook("/SubCategorias/" + currentCategory.id);
-        
+       
     return (
         <div>
             <SectionClothes 
