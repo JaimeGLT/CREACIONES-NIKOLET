@@ -1,11 +1,17 @@
 import PromosCard from './components/PromosCard'
 import TitleSectionPromos from './components/TitleSectionPromos'
 
-const Promos = () => {
+interface PromosProps {
+    userRole: string | undefined
+}
+
+const Promos = ({ userRole }: PromosProps) => {
     return (
         <>
             <TitleSectionPromos title='PROMOS Y DESCUENTOS'>
-                <PromosCard />
+                <PromosCard 
+                    userRole={userRole}
+                />
             </TitleSectionPromos>
         </>
     )

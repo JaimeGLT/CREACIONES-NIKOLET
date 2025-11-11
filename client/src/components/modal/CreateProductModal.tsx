@@ -30,6 +30,11 @@ const CreateProductModal = ({ setState, id, onUpdate }: CreateProductModalProps)
 
     const { data, loading, postData } = usePost("/Productos");
     const { data: subCategorias } = getHook("/SubCategorias");
+    console.log(subCategorias);
+    
+    const subCategoriasFiltered = subCategorias?.map((item: any) => (
+        {value: item?.id, nombre: item?.nombre}
+    ))
 
     useEffect(() => {
         reset({
@@ -177,7 +182,7 @@ const CreateProductModal = ({ setState, id, onUpdate }: CreateProductModalProps)
 
                 <Select 
                     labelContent='SubCategoria'
-                    opts={subCategorias}
+                    opts={subCategoriasFiltered}
                     color='purple'
                     selectName='IdSubcategoria '
                     defaultValue={data?.IdSubcategoria }

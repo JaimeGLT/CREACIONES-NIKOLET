@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Opts {
-    id: number;
+    value: string | boolean;
     nombre: string;
 }
 
@@ -38,7 +38,7 @@ const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
             >
                 {
                     opts?.map((item: Opts) => (
-                        <option className="text-sm sm:text-base" key={item.id} value={item.id}>{item.nombre}</option>
+                        <option className="text-sm sm:text-base" key={String(item.value)} value={String(item.value)}>{item.nombre}</option>
                     ))
                 }
             </select>
@@ -55,7 +55,7 @@ const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
             >
                 {
                     opts?.map((item: Opts) => (
-                        <option className="text-sm sm:text-base" key={item.id} value={item.id}>{item.nombre}</option>
+                        <option className="text-sm sm:text-base" key={String(item.value)} value={String(item.value)}>{item.nombre}</option>
                     ))
                 }
             </select>

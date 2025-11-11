@@ -1,7 +1,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { createProduct } from '../../schema/productSchema';
+import { createProduct, updateProduct } from '../../schema/productSchema';
 import Input from '.././Input';
 import { getHook } from '../../hooks/getHook';
 import Loading from '.././Loading';
@@ -29,7 +29,7 @@ const UpdateProductModal = ({ setState, id, onUpdate }: UpdateProductModalProps)
         formState: { errors },
         reset 
     } = useForm({
-        resolver: zodResolver(createProduct),
+        resolver: zodResolver(updateProduct),
         defaultValues: {
             Imagen: "",
             codigo: "",
@@ -47,7 +47,7 @@ const UpdateProductModal = ({ setState, id, onUpdate }: UpdateProductModalProps)
 
         if (data && !loading) {
             reset({
-                Imagen: data.urlImagen,
+                Imagen: undefined,
                 codigo: data.codigo, 
                 Nombre: data.nombre,
                 Descripcion: data.descripcion,
@@ -69,6 +69,9 @@ const UpdateProductModal = ({ setState, id, onUpdate }: UpdateProductModalProps)
         const file = body.Imagen?.[0]
 
         const formData = new FormData();
+        if (id !== null) {
+            formData.append("id", String(id));
+        }
         formData.append("Codigo", body.codigo);
         formData.append("Nombre", body.Nombre);
         formData.append("Descripcion", body.Descripcion || "");
@@ -76,7 +79,9 @@ const UpdateProductModal = ({ setState, id, onUpdate }: UpdateProductModalProps)
         formData.append("CostoVenta", body.CostoVenta);
         formData.append("Stock", body.stock || 0);
         formData.append("IdSubcategoria", body.IdSubcategoria);
-        formData.append("Imagen", file);
+        if (file) {
+            formData.append("Imagen", file);
+        }
         
         try {
             await patchData(formData);

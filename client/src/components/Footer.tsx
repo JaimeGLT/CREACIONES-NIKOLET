@@ -1,6 +1,6 @@
 const Footer = () => {
 
-    const phoneNumber = "59174808807";
+    const phoneNumber = "59163361091";
     const defaultMessage = "¡Hola! Quiero más información.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
 

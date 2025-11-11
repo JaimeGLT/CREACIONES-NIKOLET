@@ -32,9 +32,71 @@
   --color-secondary-light: #FFDDE3;
   --color-secondary-pink: #FF7ADB;
   --color-secondary-purple: #730054;
-  --color-buttons-color: #F393A4
+  --color-buttons-color: #F393A4;
 
+--animate-ball-move-1: ballMove1 6s ease-in-out infinite alternate;
+  --animate-ball-move-2: ballMove2 8s ease-in-out infinite alternate;
+  --animate-ball-move-3: ballMove3 10s ease-in-out infinite alternate;
+
+  /* 💥 Keyframes */
+  @keyframes ballMove1 {
+    0% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(80%, -20%) scale(1.1); }
+    50% { transform: translate(40%, 60%) scale(0.9); }
+    75% { transform: translate(-20%, 20%) scale(1.05); }
+    100% { transform: translate(0, 0) scale(1); }
+  }
+
+  @keyframes ballMove2 {
+    0% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(-50%, 40%) scale(0.95); }
+    50% { transform: translate(60%, -30%) scale(1.1); }
+    75% { transform: translate(30%, 50%) scale(0.9); }
+    100% { transform: translate(0, 0) scale(1); }
+  }
+
+  /* 🪩 Pelota central con color dinámico */
+  @keyframes ballMove3 {
+    0% {
+      transform: translate(-10%, -10%) scale(1);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    25% {
+      transform: translate(10%, 20%) scale(1.1);
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      transform: translate(0%, -10%) scale(0.9);
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    75% {
+      transform: translate(-10%, 15%) scale(1.05);
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  @keyframes ball-move-4 {
+  0% {
+    transform: translate(-50%, 0) scale(1);
+  }
+  50% {
+    transform: translate(-50%, 20px) scale(1.2) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%, 0) scale(1);
+  }
 }
+
+.animate-ball-move-4 {
+  animation: ball-move-4 6s ease-in-out infinite;
+}
+}
+
+
 
 @keyframes modalIn {
   0% {
