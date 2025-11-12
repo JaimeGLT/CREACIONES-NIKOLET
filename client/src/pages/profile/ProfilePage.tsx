@@ -13,12 +13,12 @@ const ProfilePage = () => {
 
   return (
     <div className="p-5">
-      <h2 className="text-center font-semibold text-3xl font-hug-me my-5">CONFIGURACIÓN DE LA CUENTA</h2>
-      <div className="flex w-full gap-5 max-w-[1200px] mx-auto mb-5">
+      <h2 className="text-center font-semibold text-xl sm:text-2xl md:text-3xl font-hug-me my-5">CONFIGURACIÓN DE LA CUENTA</h2>
+      <div className="flex flex-col sm:flex-row w-full gap-5 max-w-[1200px] mx-auto mb-5">
 
         <form
             onSubmit={handleSubmitDatosPersonales(onSubmitDetails)}
-            className="w-1/2 p-8 rounded-3xl shadow-lg shadow-pink-200/40 border border-pink-200
+            className="w-full sm:w-1/2 p-5 sm:p-6 md:p-8 rounded-3xl shadow-lg shadow-pink-200/40 border border-pink-200
                     bg-gradient-to-br from-pink-100 via-white to-pink-200
                     transition-all duration-300 hover:shadow-pink-300/60"
         >
@@ -56,7 +56,7 @@ const ProfilePage = () => {
         {/* --- Formulario de Cambio de Contraseña --- */}
         <form
             onSubmit={handleSubmitContraseña(onSubmitPassword)}
-            className="w-1/2 p-8 rounded-3xl shadow-lg shadow-purple-200/40 border border-purple-200
+            className="w-full sm:w-1/2 p-5 sm:p-6 md:p-8 rounded-3xl shadow-lg shadow-purple-200/40 border border-purple-200
                     bg-gradient-to-bl from-purple-100 via-white to-pink-100
                     transition-all duration-300 hover:shadow-purple-300/60"
         >
